@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include energex *.css
+recursive-include energex *.csv
+recursive-include energex *.html
+recursive-include energex *.ico
+recursive-include energex *.js
+recursive-include energex *.json
+recursive-include energex *.md
+recursive-include energex *.png
+recursive-include energex *.py
+recursive-include energex *.svg
+recursive-include energex *.txt
+recursive-exclude energex *.pyc
