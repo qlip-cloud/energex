@@ -5,7 +5,6 @@ class QuotationEnergex(Quotation):
 
     def update_opportunity_status(self, status, opportunity=None):
         
-        super(QuotationEnergex, self).update_opportunity_status()
         if not opportunity:
             opportunity = self.opportunity
 
