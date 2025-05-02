@@ -10,7 +10,7 @@ class QuotationEnergex(Quotation):
 
         opp = frappe.get_doc("Opportunity", opportunity)
 
-        if self.method == "on_submit":
+        if status == "Quotation":
             if self.currency == 'USD':
                 opp.opportunity_amount = self.base_total
             else:
