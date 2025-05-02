@@ -15,8 +15,12 @@ class QuotationEnergex(Quotation):
                 opp.opportunity_amount = self.base_total
             else:
                 opp.opportunity_amount = self.total
+
+            opp.set_status(status=status, update=True)
             opp.save()
-            
-        opp.set_status(status=status, update=True)
+
+        else:    
+            opp.set_status(status=status, update=True)
+        
        
     
