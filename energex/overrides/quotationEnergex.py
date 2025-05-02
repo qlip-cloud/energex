@@ -9,14 +9,13 @@ class QuotationEnergex(Quotation):
             opportunity = self.opportunity
 
         opp = frappe.get_doc("Opportunity", opportunity)
-        
+
         if self.currency == 'USD':
             opp.opportunity_amount = self.base_total
         else:
             opp.opportunity_amount = self.total
 
         opp.set_status(status=status, update=True)
-        opp.save()
         
        
     
