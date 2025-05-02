@@ -82,7 +82,7 @@ app_license = "MIT"
 # Override standard doctype classes
 
 override_doctype_class = {
-	"Quotation": "erpnext.overrides.quotationEnergex.QuotationEnergex"
+	"Quotation": "energex.overrides.quotationEnergex.QuotationEnergex"
 }
 
 # Document Events
