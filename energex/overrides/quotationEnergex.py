@@ -10,10 +10,11 @@ class QuotationEnergex(Quotation):
 
         opp = frappe.get_doc("Opportunity", opportunity)
 
-        if self.currency == 'USD':
-            opp.db_set('opportunity_amount', self.base_total)
-        else:
-            opp.db_set('opportunity_amount', self.total)
+        if status == 'Quotation':
+            if self.currency == 'USD':
+                opp.db_set('opportunity_amount', self.base_total)
+            else:
+                opp.db_set('opportunity_amount', self.total)
             
         opp.set_status(status=status, update=True)
     
