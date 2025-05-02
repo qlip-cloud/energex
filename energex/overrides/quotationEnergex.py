@@ -1,5 +1,5 @@
 import frappe
-from erpnext.erpnext.selling.doctype.quotation.quotation import Quotation
+from erpnext.selling.doctype.quotation.quotation import Quotation
 
 class QuotationEnergex(Quotation):
 
